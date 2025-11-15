@@ -1,5 +1,7 @@
 FROM node:lts-alpine
 
+RUN apk add --no-cache git
+
 RUN mkdir -p /usr/local/src/image-actions
 WORKDIR /usr/local/src/image-actions
 
